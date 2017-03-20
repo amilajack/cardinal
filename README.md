@@ -1,4 +1,4 @@
-# cardinal [![Build Status](https://secure.travis-ci.org/thlorenz/cardinal.png)](http://travis-ci.org/thlorenz/cardinal)
+# cardinal [![Build Status](https://secure.travis-ci.org/thlorenz/cardinal.svg)](http://travis-ci.org/thlorenz/cardinal)
 
 [![NPM](https://nodei.co/npm/cardinal.png?downloads=true&stars=true)](https://nodei.co/npm/cardinal/)
 
@@ -37,13 +37,13 @@
 ## Installation
 
 ### As library
-
-    npm install cardinal
-
+```bash
+npm install cardinal --save
+```
 ### As Commandline Tool
-
-    [sudo] npm install -g cardinal
-
+```bash
+[sudo] npm install -g cardinal
+```
 **Note:** 
 
 When installed globally, cardinal exposes itself as the `cdl` command.
@@ -51,15 +51,17 @@ When installed globally, cardinal exposes itself as the `cdl` command.
 ## Commandline
 
 ### Highlight a file
-
-    cdl <file.js> [options]
+```bash
+cdl <file.js> [options]
+```
 
 **options**:
   - `--nonum`: turns off line number printing (relevant if it is turned on inside `~/.cardinalrc`
 
 ### As part of a UNIX pipe
-
-    cat file.js | grep console | cdl
+```bash
+cat file.js | grep console | cdl
+```
 
 **Note:**
 
@@ -74,10 +76,10 @@ To use a different theme, include a `.cardinalrc` file in your `HOME` directory.
 
 This is a JSON file of the following form:
 
-```json
+```js
 {
   "theme": "hide-semicolons",
-  "linenos": true|false
+  "linenos": true | false
 }
 ```
 
